@@ -32,6 +32,7 @@ body{
     background-color: #85dab6; 
     padding: 25px; 
     height: 600px;
+    position: relative;
 }
 
 #div-image-displayer{
@@ -49,4 +50,23 @@ body{
     border-radius: 5px; 
     padding: 15px; 
     height: 500px;
+    overflow-y: scroll; 
+}
+
+
+.delete-box{
+    position:absolute;
+    width:40px;
+    height:40px;  
+    top: -25;
+    right: -25; 
+    z-index: 50;
+}
+
+#closeicon{
+    color:#004f8b;
+}
+#closeicon:hover{
+    color:#003055;
+    cursor: pointer;
 }

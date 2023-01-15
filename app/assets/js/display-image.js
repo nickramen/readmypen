@@ -8,3 +8,12 @@ const previewImage = (event) => {
         imagePreviewElement.style.display = "block";
     }
 };
+
+function closeImage() {
+    const imagePreviewElement = document.querySelector("#preview-selected-image");
+    imagePreviewElement.style.display = "none";
+};
+
+
+
+
