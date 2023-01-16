@@ -8,7 +8,7 @@
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/assets/css/styles.css" type="text/css">
+        <link rel="stylesheet" href="/assets/css/styles.css" type="text/css" >
 
         <!-- PyScript -->
         <!-- <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
@@ -24,7 +24,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12" id="div-title">
-                    <h1>Read My Pen</h1>
+                    <h1>Read My Pen <?php echo "This message is from server side." ?> </h1>
                 </div>
             </div>
             <div class="row">
