@@ -1,6 +1,3 @@
-<?php
-    if(isset($_POST['submit']))
-?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -36,7 +33,8 @@
                         <i class="fa fa-close" id="closeicon" style="font-size:48px;" onclick="closeImage()"></i>
                     </div>
                     <!-- SELECT PICTURE FORM -->
-                    <form action="../php/upload.php" method="post" enctype="multipart/form-data">
+                    <iframe name="picture-form" style="display:none;"></iframe>
+                    <form action="../php/upload.php" method="post" enctype="multipart/form-data" target="picture-form">
                         <div class="preview" id="div-image-displayer">
                             <!-- deleted position:absolute -->
                             <img id="preview-selected-image" name="preview-selected-image"  />
