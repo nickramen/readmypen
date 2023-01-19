@@ -13,11 +13,6 @@
         <title>Read My Pen!</title>
     </head>
     <body>
-        <?php 
-            include_once("connection.php");
-            $newconn = new Conection();
-            $conndb = $newconn->ConnectionDB();
-        ?>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12" id="div-title">

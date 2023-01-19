@@ -27,8 +27,8 @@ if(isset($_POST["submit"])) {
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 
         //connection
-        $newconn = new Conection();
-        $conndb = $newconn->ConnectionDB();
+        // $newconn = new Conection();
+        // $conndb = $newconn->ConnectionDB();
 
     }
 ?>
