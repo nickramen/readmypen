@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 class Conection{
 
@@ -35,4 +35,4 @@ class Conection{
     }
 }
 
-?>
+?> -->

@@ -26,9 +26,15 @@ if(isset($_POST["submit"])) {
     } else {
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
 
-        //connection
-        // $newconn = new Conection();
-        // $conndb = $newconn->ConnectionDB();
+
+        $path = $target_file;
+        // echo "<script>
+        //     window.onload = function(){
+        //         var nicole = document.getElementById('path');
+        //         nicole.value = '$path';
+        //     }
+        // </script>";
+
 
     }
 ?>

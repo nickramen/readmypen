@@ -17,7 +17,6 @@
             <div class="row">
                 <div class="col-12" id="div-title">
                     <h1>Read My Pen</h1>
-                    <input type="text" id="savedimage" value="" hidden />
                 </div>
             </div>
             <div class="row">
@@ -35,6 +34,7 @@
                     </div>
                     <!-- SELECT PICTURE FORM -->
                     <iframe name="picture-form" style="display:none;"></iframe>
+                    <input hidden id="path" type="text"/>
                     <form action="../php/upload.php" method="post" enctype="multipart/form-data" target="picture-form">
                         <div class="preview" id="div-image-displayer">
                             <!-- deleted position:absolute -->
@@ -69,6 +69,32 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="../assets/js/display-image.js"></script>
+        <script src="../php/upload.php"></script>
+
+        <!-- <script>
+            document.getElementById("path").value = path;
+        </script> -->
+
+
+
+        <!-- <script>
+            function submitForm(){
+                var path = document.getElementById("path").value;
+                $.ajax({
+                    type: "POST",
+                    url: '/connection.py',
+                    data: {path: path},
+                    success: function(response){
+                        console.log("Success: " + response);
+                    },
+                    error: function(error){
+                        console.log("Error: " + error);
+                    }
+                });
+            }
+        </script> -->
+
+
 
     </body>
 </html>
