@@ -16,7 +16,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12" id="div-title">
-                    <h1>Read My Pen</h1>
+                    <h1>Read My Pen</h1><input value='hola' id="path" type="text"/>
                 </div>
             </div>
             <div class="row">
@@ -34,7 +34,6 @@
                     </div>
                     <!-- SELECT PICTURE FORM -->
                     <iframe name="picture-form" style="display:none;"></iframe>
-                    <input hidden id="path" type="text"/>
                     <form action="../php/upload.php" method="post" enctype="multipart/form-data" target="picture-form">
                         <div class="preview" id="div-image-displayer">
                             <!-- deleted position:absolute -->
@@ -71,18 +70,20 @@
         <script src="../assets/js/display-image.js"></script>
         <script src="../php/upload.php"></script>
 
-        <!-- <script>
-            document.getElementById("path").value = path;
-        </script> -->
 
-
+        <script>
+            window.onload = function(){
+                var path = localStorage.getItem('path');
+                document.getElementById("path").value = path;
+            }
+        </script>
 
         <!-- <script>
             function submitForm(){
                 var path = document.getElementById("path").value;
                 $.ajax({
                     type: "POST",
-                    url: '/connection.py',
+                    url: '/php/upload.php',
                     data: {path: path},
                     success: function(response){
                         console.log("Success: " + response);
@@ -93,8 +94,6 @@
                 });
             }
         </script> -->
-
-
 
     </body>
 </html>
