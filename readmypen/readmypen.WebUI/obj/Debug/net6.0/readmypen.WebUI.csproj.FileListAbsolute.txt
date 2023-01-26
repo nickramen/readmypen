@@ -112,3 +112,4 @@ C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.WebUI\obj\Debug\n
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.WebUI\obj\Debug\net6.0\readmypen.WebUI.csproj.CopyComplete
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.WebUI\obj\Debug\net6.0\readmypen.WebUI.genruntimeconfig.cache
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.WebUI\obj\Debug\net6.0\ref\readmypen.WebUI.dll
+C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.WebUI\bin\Debug\net6.0\Dapper.dll
