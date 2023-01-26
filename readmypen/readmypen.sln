@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "readmypen.WebUI", "readmypen.WebUI\readmypen.WebUI.csproj", "{83FDE3C1-525C-42FA-8B79-1E8EC7225800}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "readmypen.WebUI", "readmypen.WebUI\readmypen.WebUI.csproj", "{83FDE3C1-525C-42FA-8B79-1E8EC7225800}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "readmypen.DataAccess", "readmypen.DataAccess\readmypen.DataAccess.csproj", "{ACF84CA0-657B-4A0E-A418-3AC7CA2EC2D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "readmypen.BusinessLogic", "readmypen.BusinessLogic\readmypen.BusinessLogic.csproj", "{A20C8492-549B-4D01-AB6D-96A10F1BA8D7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{83FDE3C1-525C-42FA-8B79-1E8EC7225800}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83FDE3C1-525C-42FA-8B79-1E8EC7225800}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83FDE3C1-525C-42FA-8B79-1E8EC7225800}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACF84CA0-657B-4A0E-A418-3AC7CA2EC2D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACF84CA0-657B-4A0E-A418-3AC7CA2EC2D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACF84CA0-657B-4A0E-A418-3AC7CA2EC2D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACF84CA0-657B-4A0E-A418-3AC7CA2EC2D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A20C8492-549B-4D01-AB6D-96A10F1BA8D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A20C8492-549B-4D01-AB6D-96A10F1BA8D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A20C8492-549B-4D01-AB6D-96A10F1BA8D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A20C8492-549B-4D01-AB6D-96A10F1BA8D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

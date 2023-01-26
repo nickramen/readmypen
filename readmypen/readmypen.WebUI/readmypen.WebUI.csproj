@@ -6,4 +6,8 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\readmypen.DataAccess\readmypen.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>

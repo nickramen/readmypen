@@ -1,7 +1,17 @@
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
+using readmypen.DataAccess;
+using System.Data.Common;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+// Added services to the container.
 builder.Services.AddControllersWithViews();
+
+// Add by nickramen
+var connectionString = builder.Configuration.GetConnectionString("readmypenConnectionString");
+builder.Services.AddDbContext<DbContext>(x => x.UseSqlServer(connectionString));
+
 
 var app = builder.Build();
 
