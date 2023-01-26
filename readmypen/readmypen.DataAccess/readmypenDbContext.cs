@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using readmypen.DataAccess.Entities;
 using System;
 using System.Collections.Generic;
@@ -9,13 +10,13 @@ namespace readmypen.DataAccess
 {
     class readmypenDbContext : AppDbContext
     {
-        public static string? ConnectionString { get; set; }
+        public static string ConnectionString = "";
 
         public readmypenDbContext()
         {
-
+            
         }
-
+        
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)

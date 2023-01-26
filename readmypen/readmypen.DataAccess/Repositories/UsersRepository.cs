@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Microsoft.Extensions.Configuration;
 using readmypen.DataAccess.Entities;
 using readmypen.DataAccess.Interfaces;
 using System;
@@ -21,12 +22,20 @@ namespace readmypen.DataAccess.Repositories
             parameters.Add("@usr_Username", username, DbType.String, ParameterDirection.Input);
             parameters.Add("@usr_Password", password, DbType.String, ParameterDirection.Input);
 
-
-            using (var db = new SqlConnection(readmypenDbContext.ConnectionString))
+            try
             {
-                result = db.QueryFirstOrDefault<tbUsers>(SqlQuery, parameters, commandType: CommandType.StoredProcedure);
+                using (var db = new SqlConnection(readmypenDbContext.ConnectionString))
+                {
+                    result = db.QueryFirstOrDefault<tbUsers>(SqlQuery, parameters, commandType: CommandType.StoredProcedure);
+                }
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
             }
 
+            
             return result;
         }
     }

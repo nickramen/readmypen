@@ -6,9 +6,6 @@ C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.DataAccess\obj\De
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.DataAccess\bin\Debug\net6.0\readmypen.DataAccess.deps.json
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.DataAccess\bin\Debug\net6.0\readmypen.DataAccess.dll
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.DataAccess\bin\Debug\net6.0\readmypen.DataAccess.pdb
-C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.DataAccess\bin\Debug\net6.0\readmypen.BusinessLogic.dll
-C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.DataAccess\bin\Debug\net6.0\readmypen.BusinessLogic.pdb
-C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.DataAccess\obj\Debug\net6.0\readmypen.DataAccess.csproj.CopyComplete
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.DataAccess\obj\Debug\net6.0\readmypen.DataAccess.dll
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.DataAccess\obj\Debug\net6.0\refint\readmypen.DataAccess.dll
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.DataAccess\obj\Debug\net6.0\readmypen.DataAccess.pdb

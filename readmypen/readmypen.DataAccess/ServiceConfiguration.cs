@@ -1,5 +1,4 @@
-﻿using readmypen.BusinessLogic;
-using readmypen.DataAccess;
+﻿using readmypen.DataAccess;
 using readmypen.DataAccess.Entities;
 using readmypen.DataAccess.Repositories;
 using Microsoft.AspNetCore.Mvc;
@@ -19,6 +18,8 @@ namespace readmypen.DataAccess
             services.AddScoped<AppDbContext>();
 
             services.AddScoped<RolesRepository>();
+            services.AddScoped<UsersRepository>();
+            services.AddScoped<PicturesRepository>();
 
 
             services.AddSingleton<IActionContextAccessor, ActionContextAccessor>()
@@ -27,15 +28,9 @@ namespace readmypen.DataAccess
                 .GetUrlHelper(x.GetRequiredService<IActionContextAccessor>().ActionContext));
 
             readmypenDbContext.BuildConnectionString(connectionString);
-        }
-        public static void AddBusinessLogic(this IServiceCollection services)
-        {
-            //services.AddScoped<>();
-
+        
         }
     }
-    
-
 }
 
 

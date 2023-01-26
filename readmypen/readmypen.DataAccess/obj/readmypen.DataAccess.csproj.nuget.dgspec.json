@@ -4,14 +4,14 @@
     "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.DataAccess\\readmypen.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.BusinessLogic\\readmypen.BusinessLogic.csproj": {
+    "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.DataAccess\\readmypen.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.BusinessLogic\\readmypen.BusinessLogic.csproj",
-        "projectName": "readmypen.BusinessLogic",
-        "projectPath": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.BusinessLogic\\readmypen.BusinessLogic.csproj",
+        "projectUniqueName": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.DataAccess\\readmypen.DataAccess.csproj",
+        "projectName": "readmypen.DataAccess",
+        "projectPath": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.DataAccess\\readmypen.DataAccess.csproj",
         "packagesPath": "C:\\Users\\Nicole\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.BusinessLogic\\obj\\",
+        "outputPath": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nicole\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,65 +39,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48",
-            "net481"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
-            }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.DataAccess\\readmypen.DataAccess.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.DataAccess\\readmypen.DataAccess.csproj",
-        "projectName": "readmypen.DataAccess",
-        "projectPath": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.DataAccess\\readmypen.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\Nicole\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.DataAccess\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\Nicole\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {
-              "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.BusinessLogic\\readmypen.BusinessLogic.csproj": {
-                "projectPath": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.BusinessLogic\\readmypen.BusinessLogic.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
           "dependencies": {
             "Dapper": {
               "target": "Package",
@@ -111,9 +52,21 @@
               "target": "Package",
               "version": "[5.1.0, )"
             },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[7.0.2, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "System.Data.SqlClient": {
               "target": "Package",

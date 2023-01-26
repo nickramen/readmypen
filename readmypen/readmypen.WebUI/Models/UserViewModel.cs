@@ -11,7 +11,7 @@ namespace readmypen.WebUI.Models
         public string usr_Username { get; set; }
 
         [Display(Name = "Password")]
-        public byte[] usr_Password { get; set; }
+        public string usr_Password { get; set; }
 
         [Display(Name = "Role Id")]
         public int rol_Id { get; set; }

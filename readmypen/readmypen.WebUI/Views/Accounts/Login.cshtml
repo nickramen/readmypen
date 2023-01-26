@@ -1,16 +1,17 @@
-﻿@{
+﻿@model UserViewModel
+@{
     ViewData["Title"] = "Login Page";
 }
 <div class="container-logsig">
-    <form class="formulario" action="/action_page.php">
+    <form asp-action="Enter" asp-controller="Accounts" class="formulario">
         <h2>Login Form</h2>
         <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control caja" id="email" placeholder="Enter email" name="email">
+            <label for="username">Username:</label>
+            <input asp-for="usr_Username" type="text" class="form-control caja" id="username" placeholder="Enter username" name="username">
         </div>
         <div class="form-group">
-            <label for="pwd">Password:</label>
-            <input type="password" class="form-control caja" id="pwd" placeholder="Enter password" name="pwd">
+            <label for="passward">Password:</label>
+            <input asp-for="usr_Password" type="password" class="form-control caja" id="password" placeholder="Enter password" name="password">
         </div>
         <div class="checkbox">
             <label><input type="checkbox" name="remember"> Remember me</label>

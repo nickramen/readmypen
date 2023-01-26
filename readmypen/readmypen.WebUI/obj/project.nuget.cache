@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "rY+sN2cXMx2ns9ps5/1T7gxiKqdMFRRlktQi6DGsD706icwKjnXkHBYDyjQLFF3Zf04ay/lGovlfNSC6c/BYSw==",
+  "dgSpecHash": "yiroAlQyl1fu0YjibkHy52hsChPGDIOIoLgTxQSJVPdWK5hCydTVbVrI1Zdl98E9ddAqFdNQ8cpPzcbM+HH7Yw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nicole\\Documents\\GitHub\\readmypen\\readmypen\\readmypen.WebUI\\readmypen.WebUI.csproj",
   "expectedPackageFiles": [
@@ -35,6 +35,7 @@
     "C:\\Users\\Nicole\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\7.0.2\\microsoft.entityframeworkcore.sqlserver.7.0.2.nupkg.sha512",
     "C:\\Users\\Nicole\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\7.0.0\\microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Nicole\\.nuget\\packages\\microsoft.extensions.caching.memory\\7.0.0\\microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "C:\\Users\\Nicole\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
     "C:\\Users\\Nicole\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
     "C:\\Users\\Nicole\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
     "C:\\Users\\Nicole\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",

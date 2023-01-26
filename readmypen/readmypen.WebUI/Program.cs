@@ -1,19 +1,22 @@
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using readmypen.DataAccess.Interfaces;
+using readmypen.DataAccess.Repositories;
+using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.Extensions.Configuration;
 using readmypen.DataAccess;
-using System.Data.Common;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Added services to the container.
 builder.Services.AddControllersWithViews();
 
-// Add by nickramen
-var connectionString = builder.Configuration.GetConnectionString("readmypenConnectionString");
-builder.Services.AddDbContext<DbContext>(x => x.UseSqlServer(connectionString));
-
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
 
 var app = builder.Build();
+
+var config = app.Configuration.GetValue<string>("ConnectionStrings:readmypenConnectionString");
 
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -35,3 +38,4 @@ app.MapControllerRoute(
     pattern: "{controller=Accounts}/{action=Login}/{id?}");
 
 app.Run();
+

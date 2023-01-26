@@ -10,3 +10,6 @@ C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.BusinessLogic\obj
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.BusinessLogic\obj\Debug\net6.0\refint\readmypen.BusinessLogic.dll
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.BusinessLogic\obj\Debug\net6.0\readmypen.BusinessLogic.pdb
 C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.BusinessLogic\obj\Debug\net6.0\ref\readmypen.BusinessLogic.dll
+C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.BusinessLogic\bin\Debug\net6.0\readmypen.DataAccess.dll
+C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.BusinessLogic\bin\Debug\net6.0\readmypen.DataAccess.pdb
+C:\Users\Nicole\Documents\GitHub\readmypen\readmypen\readmypen.BusinessLogic\obj\Debug\net6.0\readmypen.BusinessLogic.csproj.CopyComplete
