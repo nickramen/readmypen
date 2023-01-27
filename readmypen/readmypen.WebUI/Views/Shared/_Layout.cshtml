@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor contextAccesor
+@model UserViewModel
+
+@{ string NombreUsuario = contextAccesor.HttpContext.Session.GetString("usu_NombreUsuario");}
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -19,7 +24,16 @@
     <div class="container-fluid">
         <div class="row" style="text-align:center">
             <div class="col-12" id="div-title">
-                <h1>Read My Pen</h1><input hidden value='hola' id="path" type="text" />
+                @if (@ViewBag.Message == "" || @ViewBag.Message == null)
+                {
+                    <h1>Read My Pen - Welcome!</h1>
+                }
+                else
+                {
+                    <h1>Read My Pen - Welcome, @ViewBag.Message !!</h1>
+
+                    <input hidden value='hola' id="path" type="text" />
+                }
             </div>
         </div>
 

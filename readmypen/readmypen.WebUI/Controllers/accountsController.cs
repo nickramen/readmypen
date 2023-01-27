@@ -8,6 +8,7 @@ namespace readmypen.WebUI.Controllers
     public class accountsController : Controller
     {
         private readonly IUsersRepository _usersRepository;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
         public accountsController(IUsersRepository usersRepository)
         {
@@ -20,6 +21,9 @@ namespace readmypen.WebUI.Controllers
         {
             return View();
         }
+
+
+        [HttpPost]
         public ActionResult Enter(string username, string password)
         {
             UserViewModel model = new UserViewModel();
@@ -34,6 +38,9 @@ namespace readmypen.WebUI.Controllers
             }
             else
             {
+                HttpContext.Session.SetString("usu_NombreUsuario", model.usr_Username);
+                ViewBag.Message = HttpContext.Session.GetString("usu_NombreUsuario");
+
                 return View("~/Views/Home/Index.cshtml");
             }
 

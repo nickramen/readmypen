@@ -10,7 +10,7 @@ namespace readmypen.DataAccess
 {
     class readmypenDbContext : AppDbContext
     {
-        public static string ConnectionString = "";
+        public static string ConnectionString = "Data source=DESKTOP-N8HS364\\SQLEXPRESS; Initial Catalog=READMYPEN_NICKRAMEN; Persist Security Info=True; Trusted_Connection=yes;";
 
         public readmypenDbContext()
         {
