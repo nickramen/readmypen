@@ -21,3 +21,4 @@ query.commit()
 # close the cursor and connection
 query.close()
 conn.close()
+
