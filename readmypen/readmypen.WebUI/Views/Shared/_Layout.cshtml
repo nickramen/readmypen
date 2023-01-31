@@ -1,7 +1,6 @@
 ﻿@using Microsoft.AspNetCore.Http
 @inject IHttpContextAccessor contextAccesor
 @model UserViewModel
-
 @{ string NombreUsuario = contextAccesor.HttpContext.Session.GetString("usu_NombreUsuario");}
 <!DOCTYPE html>
 <html lang="en">
@@ -23,6 +22,7 @@
     </header>
     <div class="container-fluid">
         <div class="row" style="text-align:center">
+@*            <input hidden type="text" value="" />
             <div class="col-12" id="div-title">
                 @if (@ViewBag.Message == "" || @ViewBag.Message == null)
                 {
@@ -34,6 +34,11 @@
 
                     <input hidden value='hola' id="path" type="text" />
                 }
+            </div>*@
+
+            <div class="col-12" id="div-title">
+                <h1>Read My Pen - Welcome <span>@NombreUsuario</span>!</h1>
+                <input hidden value='hola' id="path" type="text" />
             </div>
         </div>
 
