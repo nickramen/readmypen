@@ -33,6 +33,10 @@
       {
          "Name": "[dbo].[UDP_Acce_tbUsers_Login]",
          "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[UDP_Admin_tbPictures_Insert]",
+         "ObjectType": 1
       }
    ],
    "UiHint": "DESKTOP-N8HS364\\SQLEXPRESS.READMYPEN_NICKRAMEN",

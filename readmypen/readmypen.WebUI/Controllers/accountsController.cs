@@ -39,10 +39,9 @@ namespace readmypen.WebUI.Controllers
             else
             {
                 HttpContext.Session.SetString("usu_NombreUsuario", login.usr_Username);
-                HttpContext.Session.SetInt32("usu_Id", login.usr_Id);
-
-                HttpContext.Session.SetString("usu_NombreUsuario", model.usr_Username);
-                ViewBag.Message = HttpContext.Session.GetString("usu_NombreUsuario");
+                //HttpContext.Session.SetInt32("usu_Id", login.usr_Id);
+                //HttpContext.Session.SetString("usu_NombreUsuario", model.usr_Username);
+                //ViewBag.Message = HttpContext.Session.GetString("usu_NombreUsuario");
 
                 return View("~/Views/Home/Index.cshtml");
             }

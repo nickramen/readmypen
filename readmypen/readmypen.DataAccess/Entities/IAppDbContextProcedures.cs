@@ -14,5 +14,6 @@ namespace readmypen.DataAccess.Entities
     {
         Task<int> UDP_Acce_tbUsers_InsertAsync(string usr_Username, string usr_Password, int? rol_Id, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<List<UDP_Acce_tbUsers_LoginResult>> UDP_Acce_tbUsers_LoginAsync(string usr_Username, string usr_Password, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<int> UDP_Admin_tbPictures_InsertAsync(string pic_PicturePath, int? usr_Id, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
     }
 }

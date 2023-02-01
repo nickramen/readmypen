@@ -38,6 +38,7 @@ GO
 /*SECTION #4*/
 CREATE TABLE [Admin].[tbPictures](
 	[pic_Id]				INT IDENTITY(1,1),
+	--[pic_PictureName]		NVARCHAR(MAX)     NOT NULL,
 	[pic_PicturePath]		NVARCHAR(MAX)     NOT NULL,
 	[usr_Id]				INT               NOT NULL,
 
@@ -98,6 +99,22 @@ BEGIN
     FROM            [Acce].[tbUsers] AS [usr]
     WHERE           [usr].[usr_Username] = @usr_Username
     AND            CONVERT(VARCHAR(50), DECRYPTBYPASSPHRASE('temere id est nuntius',[usr].[usr_Password],1,CONVERT(VARBINARY,@usr_Username))) = @usr_Password COLLATE SQL_Latin1_General_CP1_CS_AS
+END
+GO
+
+/*SECTION #8*/
+GO
+CREATE PROCEDURE [UDP_Admin_tbPictures_Insert]
+--========================================================
+--Author:       Nicole Ramos
+--Create date:  31/01/2023
+--Description:  Insert pictures to database.
+--========================================================
+    @pic_PicturePath	VARCHAR(MAX),
+    @usr_Id				INT
+AS
+BEGIN
+    INSERT [Admin].[tbPictures] ([pic].[pic_PicturePath], [pic].[usr_Id]) VALUES(@pic_PicturePath, @usr_Id)
 END
 GO
 
