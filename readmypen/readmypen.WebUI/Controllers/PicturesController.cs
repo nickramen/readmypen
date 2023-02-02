@@ -21,14 +21,14 @@ namespace readmypen.WebUI.Controllers
         }
 
 
-        ////[HttpPost]
-        //public async Task<IActionResult> Upload(PictureViewModel model)
+        //[HttpPost]
+        //public IActionResult Upload(PictureViewModel model)
         //{
         //    // Validate the model
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest(ModelState);
-        //    }
+        //    //if (!ModelState.IsValid)
+        //    //{
+        //    //    return BadRequest(ModelState);
+        //    //}
 
         //    // Check if a file was uploaded
         //    if (model.pic_PicturePath == null || model.pic_PicturePath.Length == 0)
@@ -41,7 +41,7 @@ namespace readmypen.WebUI.Controllers
         //    var filePath = Path.Combine(uploads, model.pic_PicturePath.FileName);
         //    using (var fileStream = new FileStream(filePath, FileMode.Create))
         //    {
-        //        await model.pic_PicturePath.CopyToAsync(fileStream);
+        //        model.pic_PicturePath.CopyTo(fileStream);
         //    }
 
         //    // Add the file information to the database
@@ -65,7 +65,7 @@ namespace readmypen.WebUI.Controllers
         //    return Ok(new { status = "success", message = "File uploaded successfully." });
 
         //    ////return RedirectToAction(nameof(Index));
-        }
+        //}
 
     }
 }

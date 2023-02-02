@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using readmypen.DataAccess.Entities;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +10,6 @@ namespace readmypen.DataAccess.Interfaces
 {
     public interface IPicturesRepository
     {
+        public int InsertPicture(string pic_PicturePath, int usr_Id);
     }
 }

@@ -149,6 +149,9 @@ INSERT [Admin].[tbPictures] ([pic_PicturePath],[usr_Id]) VALUES ( N'This is a us
 INSERT [Admin].[tbPictures] ([pic_PicturePath],[usr_Id]) VALUES ( N'This is another user path',1)
 GO
 
+EXEC [UDP_Admin_tbPictures_Insert] 'This is another path', 1
+EXEC [UDP_Admin_tbPictures_Insert] 'This is another path', 1
+
 SELECT * FROM Admin.tbPictures
 
 --==============================JOINS==============================

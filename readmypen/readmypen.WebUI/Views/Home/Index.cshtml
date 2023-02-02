@@ -18,8 +18,8 @@
                 <i class="fa fa-close" id="closeicon" style="font-size:48px;" onclick="closeImage()"></i>
             </div>
             <!-- SELECT PICTURE FORM -->
-            <iframe name="picture-form" style="display:none;"></iframe>
-            <form asp-action="Upload" asp-controller="Pictures" method="post" enctype="multipart/form-data" target="picture-form">
+           @* <iframe name="picture-form" style="display:none;"></iframe>*@
+            <form asp-action="Upload" asp-controller="Pictures" method="post" enctype="multipart/form-data">
                 <div class="preview" id="div-image-displayer">
                     <!-- deleted position:absolute -->
                     <img id="preview-selected-image" name="preview-selected-image" />

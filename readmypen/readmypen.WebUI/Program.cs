@@ -5,14 +5,16 @@ using readmypen.DataAccess.Repositories;
 using Microsoft.EntityFrameworkCore.SqlServer;
 using Microsoft.Extensions.Configuration;
 using readmypen.DataAccess;
-
+using readmypen.DataAccess.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Added services to the container.
 builder.Services.AddControllersWithViews();
 
+builder.Services.AddScoped<AppDbContext>();
 builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+builder.Services.AddScoped<IPicturesRepository, PicturesRepository>();
 
 builder.Services.AddHttpClient();
 builder.Services.AddHttpContextAccessor();
