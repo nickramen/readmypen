@@ -21,51 +21,51 @@ namespace readmypen.WebUI.Controllers
         }
 
 
-        //[HttpPost]
-        //public IActionResult Upload(PictureViewModel model)
-        //{
-        //    // Validate the model
-        //    //if (!ModelState.IsValid)
-        //    //{
-        //    //    return BadRequest(ModelState);
-        //    //}
+        [HttpPost]
+        public IActionResult Upload(PictureViewModel model)
+        {
+            // Validate the model
+            //if (!ModelState.IsValid)
+            //{
+            //    return BadRequest(ModelState);
+            //}
 
-        //    // Check if a file was uploaded
-        //    if (model.pic_PicturePath == null || model.pic_PicturePath.Length == 0)
-        //    {
-        //        return BadRequest("File not found.");
-        //    }
+            // Check if a file was uploaded
+            if (model.pic_PicturePath == null || model.pic_PicturePath.Length == 0)
+            {
+                return BadRequest("File not found.");
+            }
 
-        //    // Save the file to the server
-        //    var uploads = Path.Combine(_environment.WebRootPath, "uploads");
-        //    var filePath = Path.Combine(uploads, model.pic_PicturePath.FileName);
-        //    using (var fileStream = new FileStream(filePath, FileMode.Create))
-        //    {
-        //        model.pic_PicturePath.CopyTo(fileStream);
-        //    }
+            // Save the file to the server
+            var uploads = Path.Combine(_environment.WebRootPath, "uploads");
+            var filePath = Path.Combine(uploads, model.pic_PicturePath.FileName);
+            using (var fileStream = new FileStream(filePath, FileMode.Create))
+            {
+                model.pic_PicturePath.CopyTo(fileStream);
+            }
 
-        //    // Add the file information to the database
-        //    var picture = new tbPictures
-        //    {
-        //        //pic_PictureName = model.pic_PictureName,
-        //        pic_PicturePath = "/uploads/" + model.pic_PicturePath.FileName,
-        //        usr_Id = model.usr_Id
-        //    };
-        //    //////_context.tbPictures.Add(picture);
-        //    //////await _context.SaveChangesAsync();
+            // Add the file information to the database
+            var picture = new tbPictures
+            {
+                //pic_PictureName = model.pic_PictureName,
+                pic_PicturePath = "/uploads/" + model.pic_PicturePath.FileName,
+                usr_Id = model.usr_Id
+            };
+            //////_context.tbPictures.Add(picture);
+            //////await _context.SaveChangesAsync();
 
-        //    //////var repository = new PicturesRepository();
-        //    //////repository.InsertPicture(picture);
+            //////var repository = new PicturesRepository();
+            //////repository.InsertPicture(picture);
 
-        //    var repository = new PicturesRepository();
-        //    repository.InsertPicture(picture.pic_PicturePath, picture.usr_Id);
+            var repository = new PicturesRepository();
+            repository.InsertPicture(picture.pic_PicturePath, picture.usr_Id);
 
 
-        //    // Return the success status
-        //    return Ok(new { status = "success", message = "File uploaded successfully." });
+            // Return the success status
+            return Ok(new { status = "success", message = "File uploaded successfully." });
 
-        //    ////return RedirectToAction(nameof(Index));
-        //}
+            ////return RedirectToAction(nameof(Index));
+        }
 
     }
 }
