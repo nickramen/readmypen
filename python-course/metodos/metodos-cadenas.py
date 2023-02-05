@@ -1,4 +1,4 @@
-cadena1 = "Hola soy Nicole y mi nombre es Nicole"
+cadena1 = "Hola soy, Nicole, y mi nombre es Nicole"
 cadena2 = "3"
 cadena3 = "alfanumerico"
 
@@ -14,5 +14,8 @@ es_alfanumerico = cadena3.isalpha()
 contar_coincidencias = cadena1.count("Nicole")
 contar_caracteres = len(cadena1)
 empieza_con = cadena1.startswith("H")
+termina_con = cadena1.endswith("H")
+cadena_nueva = cadena1.replace("la","lu")
+cadena_separada = cadena1.split(",")
 
-print(empieza_con)
+print(cadena_separada[1])
