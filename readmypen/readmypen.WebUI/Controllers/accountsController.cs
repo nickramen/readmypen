@@ -48,8 +48,6 @@ namespace readmypen.WebUI.Controllers
 
         }
 
-
-        // GET: AccountsController/Details/5
         public ActionResult Signup()
         {
             return View();

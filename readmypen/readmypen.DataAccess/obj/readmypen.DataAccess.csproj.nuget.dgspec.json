@@ -83,6 +83,10 @@
             "System.Data.SqlClient": {
               "target": "Package",
               "version": "[4.8.5, )"
+            },
+            "WakaTime": {
+              "target": "Package",
+              "version": "[8.1.11, )"
             }
           },
           "imports": [
