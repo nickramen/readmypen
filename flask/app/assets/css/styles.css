@@ -1,72 +1,120 @@
-body{
+body {
     margin: 0px;
     padding: 0px;
     background-color: #ffbe00ff;
 }
 
-#div-title{
+#div-title {
     padding: 10px;
 }
 
-#div-box-title-1{
+#div-box-title-1 {
     background-color: #0092ff;
     padding: 10px;
     text-align: center;
     color: white;
 }
 
-#div-box-title-2{
+#div-box-title-2 {
     background-color: #00b677;
     padding: 10px;
     text-align: center;
     color: white;
 }
 
-#div-box-content-1{
-    background-color: #abdbe3; 
-    padding: 25px; 
+#div-box-content-1 {
+    background-color: #abdbe3;
+    padding: 25px;
     height: 600px;
 }
 
-#div-box-content-2{
-    background-color: #85dab6; 
-    padding: 25px; 
+#div-box-content-2 {
+    background-color: #85dab6;
+    padding: 25px;
     height: 600px;
     position: relative;
 }
 
-#div-image-displayer{
-    background-color: #bef1f9; 
-    border-radius: 5px; 
-    padding: 15px; 
-    height: 500px; 
-    overflow-y: scroll; 
-    position:relative;
-}
-
-
-#div-text-editor{
-    background-color: #bffcb1; 
-    border-radius: 5px; 
-    padding: 15px; 
+#div-image-displayer {
+    background-color: #bef1f9;
+    border-radius: 5px;
+    padding: 15px;
     height: 500px;
-    overflow-y: scroll; 
+    overflow-y: scroll;
+    position: relative;
 }
 
 
-.delete-box{
-    position:absolute;
-    width:40px;
-    height:40px;  
+#div-text-editor {
+    background-color: #bffcb1;
+    border-radius: 5px;
+    padding: 15px;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+
+.delete-box {
+    position: absolute;
+    width: 40px;
+    height: 40px;
     top: -25;
-    right: -25; 
+    right: -25;
     z-index: 50;
 }
 
-#closeicon{
-    color:#004f8b;
+#closeicon {
+    color: #004f8b;
 }
-#closeicon:hover{
-    color:#003055;
+
+    #closeicon:hover {
+        color: #003055;
+        cursor: pointer;
+    }
+
+/* Center the container with the form */
+.container-logsig {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the form */
+.formulario {
+    width: 30%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+}
+
+/* Style the input fields */
+.caja {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Style the submit button */
+.buttonito {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
     cursor: pointer;
 }
+
+    .buttonito:hover {
+        background-color: #45a049;
+        border: 1px solid black;
+        color: white;
+        transition: 0.5s;
+    }
+
+
